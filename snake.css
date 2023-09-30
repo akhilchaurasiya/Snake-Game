@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(60deg,rgb(3, 3, 57),white,rgb(3, 3, 57));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.game-box{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(3, 3, 57);
+    border: 20px solid rgb(238, 243, 216);
+    box-shadow: 10px 15px 20px rgba(0,0,0,0.8);
+    display: grid;
+    grid-template-columns: repeat(50,1fr);
+    grid-template-rows: repeat(25,1fr);
+}
+
+.score{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:1%;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+    padding: 6px 0px 6px 0px;
+    width: 10vw;
+    background-color: rgb(3, 3, 57);
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+.snake{
+    background-color: aliceblue;
+    border-radius: 50%;
+    z-index: 2;
+}
+.head{
+    background-color:rgb(248, 248, 135);
+    border-radius:50%;
+    z-index: 10;
+}
+
+.food{
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.popup{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+    
+    width: 50%;
+    height: 50%;
+    background-color: rgb(3, 3, 57);
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.home,.restart{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: rgb(3, 3, 57);
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home{
+    font-weight: bolder;
+}
+.buttons{
+    position: relative;
+    bottom: -5%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
